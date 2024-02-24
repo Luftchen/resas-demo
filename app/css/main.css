@@ -1,30 +1,30 @@
-header{
-    background-color: #444;
-    color:white;
-    padding:0.6rem 0;
+header {
+  background-color: #444;
+  color: white;
+  padding: 0.6rem 0;
 }
-header h1{
-    text-align: center;
+header h1 {
+  text-align: center;
 }
 
-.container{
-    padding:1rem 0.6rem;
-    margin:auto;
-    max-width: 800px;
+.container {
+  padding: 1rem 0.6rem;
+  margin: auto;
+  max-width: 800px;
 }
-ul{
-    margin:0;
-    padding:0;
+ul {
+  margin: 0;
+  padding: 0;
 }
-ul li{
-    list-style: none;
+ul li {
+  list-style: none;
 }
-.ul_list li{
-    display: inline-block;
-    padding-right: 1em;
+.ul_list li {
+  display: inline-block;
+  padding-right: 1em;
 }
-.pref_box{
-    border:1px solid #ccc;
-    margin-bottom: 1rem;
-    padding:1rem;
+.pref_box {
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }

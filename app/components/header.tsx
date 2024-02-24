@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const Header: React.FC = () => {
-  return(
+  return (
     <header>
-      <h1>Title</h1>
+      <h1>都道府県別　人口推移グラフ</h1>
     </header>
-  )
-  }
+  );
+};
