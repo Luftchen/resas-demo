@@ -90,12 +90,16 @@ export default function Home() {
   return (
     <>
       <div className="pref_box">
-        <div>
+        <div className="lead">
           <strong>都道府県</strong>
         </div>
         {prefectures !== null ? (
           <ul className="ul_list">
             {prefectures.result?.map((pref, index) => {
+              let _prefName =
+                pref.prefName.length == 3
+                  ? pref.prefName + "　"
+                  : pref.prefName;
               return (
                 <li key={index}>
                   <label>
@@ -110,7 +114,7 @@ export default function Home() {
                         )
                       }
                     />
-                    {pref.prefName}
+                    {_prefName}
                   </label>
                 </li>
               );
@@ -120,7 +124,7 @@ export default function Home() {
           <></>
         )}
       </div>
-      <div>
+      <div className="lead">
         <strong>人口推移グラフ</strong>
       </div>
       <PrefGraphRenderer datas={graphDatas} />

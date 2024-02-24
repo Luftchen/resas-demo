@@ -16,7 +16,7 @@ type Props = {
 };
 
 const PrefGraphRenderer: React.FC<Props> = ({ datas }) => {
-  let series: HighCharts.SeriesOptionsType[] = [];
+  let series: Highcharts.SeriesOptionsType[] = [];
   let categories = [];
 
   for (let records of datas) {
@@ -28,7 +28,6 @@ const PrefGraphRenderer: React.FC<Props> = ({ datas }) => {
     series.push({
       type: "line",
       name: records.prefName,
-      code: records.prefCode,
       data: _result,
     });
   }

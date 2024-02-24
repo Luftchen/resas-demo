@@ -5,13 +5,23 @@ header {
 }
 header h1 {
   text-align: center;
+  font-size: 5vmin;
 }
 
 .container {
-  padding: 1rem 0.6rem;
+  padding: 1rem 0.5rem;
   margin: auto;
   max-width: 800px;
 }
+
+.lead {
+  background-color: #eee;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -21,10 +31,28 @@ ul li {
 }
 .ul_list li {
   display: inline-block;
-  padding-right: 1em;
+  padding-right: 0em;
 }
+
+/* pc */
 .pref_box {
-  border: 1px solid #ccc;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 0rem;
+}
+.pref_box ul {
+  padding: 0 1rem;
+}
+.pref_box label {
+  font-size: 1rem;
+  display: inline-block;
+}
+/* sp */
+@media (max-width: 767px) {
+  .pref_box ul {
+    padding: 0;
+  }
+  .pref_box li {
+    display: inline-block;
+    width: 25%;
+  }
 }
