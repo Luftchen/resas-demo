@@ -11,7 +11,7 @@ header h1 {
 .container {
   padding: 1rem 0.5rem;
   margin: auto;
-  max-width: 800px;
+  /*max-width: 800px;*/
 }
 
 .lead {
