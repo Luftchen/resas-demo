@@ -7,8 +7,6 @@ import axios from "axios";
 import PrefGraphRenderer from "./pref_graph_renderer";
 
 export default function Home() {
-  const RESAS_API_KEY = "uJLFbr0kQoUwiWOmhRDxsUdGSKgPzuDGqVf5S30b";
-
   // 都道府県のstate
   const [prefectures, setPrefectures] = useState<{
     message: null;
@@ -43,7 +41,7 @@ export default function Home() {
           "https://opendata.resas-portal.go.jp/api/v1/population/composition/perYear?prefCode=" +
             String(prefCode),
           {
-            headers: { "X-API-KEY": RESAS_API_KEY },
+            headers: { "X-API-KEY": Constants.RESAS_API_KEY },
           }
         )
         .then((results) => {
@@ -77,7 +75,7 @@ export default function Home() {
   useEffect(() => {
     axios
       .get("https://opendata.resas-portal.go.jp/api/v1/prefectures", {
-        headers: { "X-API-KEY": RESAS_API_KEY },
+        headers: { "X-API-KEY": Constants.RESAS_API_KEY },
       })
       .then((results) => {
         setPrefectures(results.data);

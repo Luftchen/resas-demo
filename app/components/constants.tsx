@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
-
-export default class Constants {}
-export const Footer: React.FC = () => {
-  return <></>;
+const Constants = {
+  RESAS_API_KEY: "uJLFbr0kQoUwiWOmhRDxsUdGSKgPzuDGqVf5S30b",
 };
+
+export default Constants;
