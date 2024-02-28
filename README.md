@@ -11,6 +11,6 @@ npm run dev
 
 ## 未対応箇所
 
-・docker-compose.yaml ファイルの作成
-・Docker 環境のホットリロード対応
+・docker-compose.yaml ファイルの作成  
+・Docker 環境のホットリロード対応  
 ・環境変数（.env ファイル）からの定数読み込み
